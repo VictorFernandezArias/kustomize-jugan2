@@ -3,4 +3,5 @@ kind: ConfigMap
 metadata:
   name: cm01
 data:
-  key01: value-$(SECRETVALUE)
+  key01: value999999
+  # key01: value-$(SECRETVALUE)

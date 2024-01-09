@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app01
+spec:
+  destination:
+    name: ''
+    namespace: ns99
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: base
+    repoURL: 'https://github.com/VictorFernandezArias/kustomize-jugan2.git'
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false

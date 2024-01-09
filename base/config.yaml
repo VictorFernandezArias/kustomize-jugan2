@@ -1,0 +1,5 @@
+varReference:
+  - path: data/key01
+    kind: ConfigMap
+    apiVersion: v1
+    

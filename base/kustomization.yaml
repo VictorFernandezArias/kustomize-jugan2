@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - configmap.yaml
 
-vars:
+replacements:
   - name: SECRETVALUE
     objref:
       apiVersion: v1

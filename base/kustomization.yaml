@@ -23,5 +23,6 @@ replacements:
   - select:
       kind: ConfigMap
       name: cm01
+      version: v1
     fieldPaths:
     - data.key01

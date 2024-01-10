@@ -1,1 +1,9 @@
 Unable to create application: application spec for app01 is invalid: InvalidSpecError: Unable to generate manifests in base: rpc error: code = Unknown desc = `kustomize build <path to cached source>/base` failed exit status 1: # Warning: 'vars' is deprecated. Please use 'replacements' instead. [EXPERIMENTAL] Run 'kustomize edit fix' to update your Kustomization automatically. Error: var '{SECRETVALUE Secret.v1.[noGrp] {data.password}}' cannot be mapped to a field in the set of known resources
+
+
+Unable to create application: application spec for app01 is invalid: InvalidSpecError: Unable to generate manifests in base: rpc error: code = Unknown desc = `kustomize build <path to cached source>/base` failed exit status 1: Error: invalid Kustomization: json: unknown field "fieldref"
+
+
+Unable to create application: application spec for app01 is invalid: InvalidSpecError: Unable to generate manifests in base: rpc error: code = Unknown desc = `kustomize build <path to cached source>/base` failed exit status 1: Error: nothing selected by Secret.[noVer].[noGrp]/Secret01.ns01:data.password
+
+Unable to create application: application spec for app01 is invalid: InvalidSpecError: Unable to generate manifests in base: rpc error: code = Unknown desc = `kustomize build <path to cached source>/base` failed exit status 1: Error: nothing selected by Secret.[noVer].[noGrp]/Secret01.ns01:data.password

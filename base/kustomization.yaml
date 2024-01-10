@@ -18,6 +18,7 @@ replacements:
     kind: Secret
     name: Secret01
     namespace: ns01
+    version: v1
     fieldPath: data.password
   targets:
   - select:

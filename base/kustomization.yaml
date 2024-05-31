@@ -13,17 +13,17 @@ resources:
 #     fieldref:
 #       fieldpath: data.password
 
-replacements:
-- source:
-    kind: Secret
-    name: Secret01
-    namespace: ns01
-    version: v1
-    fieldPath: data.password
-  targets:
-  - select:
-      kind: ConfigMap
-      name: cm01
-      version: v1
-    fieldPaths:
-    - data.key01
+#replacements:
+#- source:
+#    kind: Secret
+#    name: Secret01
+#    namespace: ns01
+#    version: v1
+#    fieldPath: data.password
+#  targets:
+#  - select:
+#      kind: ConfigMap
+#      name: cm01
+#      version: v1
+#    fieldPaths:
+#    - data.key01
